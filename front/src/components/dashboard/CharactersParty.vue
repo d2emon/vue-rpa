@@ -11,31 +11,16 @@
         lg4
       >
         <v-card>
-          <h4 class="text-h6 font-weight-light">
-            Daily StackOverflow Visits
-          </h4>
-          <p class="category d-inline-flex font-weight-light">
-            <v-icon
-              color="green"
-              small
-            >
-              mdi-arrow-up
-            </v-icon>
-            <span class="green--text">55%</span>&nbsp; increase in today's
-            visits
-          </p>
+          <v-card-title>Персонажи</v-card-title>
 
-          <template slot="actions">
-            <v-icon
-              class="mr-2"
-              small
-            >
-              mdi-clock-outline
-            </v-icon>
-            <span
-              class="text-caption grey-lighten-1--text font-weight-light"
-            >updated 4 minutes ago</span>
-          </template>
+          <v-data-table
+            :headers="charactersHeaders"
+            :items="characters"
+          >
+            <template v-slot:item.name="{ item }">
+              <router-link to="{{ item.link }}">{{ item.name }}</router-link>
+            </template>
+          </v-data-table>
         </v-card>
       </v-flex>
     </v-layout>
@@ -45,6 +30,8 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
+import { Prop } from 'vue-property-decorator';
+import { Character } from '@/services/characters';
 
 @Component
 export default class CharactersParty extends Vue {
@@ -59,6 +46,44 @@ export default class CharactersParty extends Vue {
     '2',
     '3',
   ];
+
+  charactersHeaders = [
+    {
+      text: 'Имя',
+      value: 'name',
+    },
+    {
+      text: 'Характеристики',
+      value: 'stats',
+    },
+    {
+      text: 'ХП',
+      value: 'hp',
+    },
+    {
+      text: 'КД',
+      value: 'ac',
+    },
+    {
+      text: 'Спасброски',
+      value: 'savingThrows',
+    },
+    {
+      text: 'Левая рука',
+      value: 'leftHand',
+    },
+    {
+      text: 'Правая рука',
+      value: 'rightHand',
+    },
+    {
+      text: 'Уровень',
+      value: 'level',
+    },
+  ];
+
+  @Prop()
+  characters!: Character[];
 
   complete(value: number) {
     console.log(this.tabs, value);

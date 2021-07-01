@@ -6,7 +6,9 @@
 
     <v-main>
       <v-container container--fluid>
-        <characters-party />
+        <characters-party
+          :characters="characters || []"
+        />
 
         <v-fade-transition mode="out-in">
           <router-view />
@@ -22,7 +24,8 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
-import { mapState } from 'vuex';
+import { mapActions, mapState } from 'vuex';
+import { Character } from '@/services/characters';
 
 @Component({
   components: {
@@ -30,13 +33,23 @@ import { mapState } from 'vuex';
     CharactersParty: () => import('@/components/dashboard/CharactersParty.vue'),
   },
   computed: {
-    ...mapState([
-      'title',
-    ]),
+    ...mapState(['title']),
+    ...mapState('characters', ['characters']),
+  },
+  methods: {
+    ...mapActions('characters', ['fetchCharacters']),
   },
 })
 export default class DashboardView extends Vue {
   title!: string;
+
+  characters!: Character[] | null;
+
+  fetchCharacters!: () => Promise<null>;
+
+  mounted() {
+    this.fetchCharacters();
+  }
 }
 </script>
 
