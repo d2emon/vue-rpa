@@ -6,7 +6,7 @@ import { RootState } from '../../state';
 const actions: ActionTree<CharactersState, RootState> = {
   fetchCharacters: ({ commit }) => charactersService
     .getCharacters()
-    .then((characters: Character[]) => commit('setCharacters', characters)),
+    .then((items: Character[]) => commit('setCharacters', items)),
 };
 
 export default actions;

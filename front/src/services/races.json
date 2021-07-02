@@ -1,0 +1,38 @@
+[
+  {
+    "id": "dwarf",
+    "name": "Дварф"
+  },
+  {
+    "id": "elf",
+    "name": "Эльф"
+  },
+  {
+    "id": "halfling",
+    "name": "Полурослик"
+  },
+  {
+    "id": "human",
+    "name": "Человек"
+  },
+  {
+    "id": "dragonborn",
+    "name": "Драконорожденный"
+  },
+  {
+    "id": "gnome",
+    "name": "Гном"
+  },
+  {
+    "id": "half-elf",
+    "name": "Полуэльф"
+  },
+  {
+    "id": "half-orc",
+    "name": "Полуорк"
+  },
+  {
+    "id": "tifling",
+    "name": "Тифлинг"
+  }
+]
