@@ -18,7 +18,7 @@
             :items="characters"
           >
             <template v-slot:item.name="{ item }">
-              <router-link to="{{ item.link }}">{{ item.name }}</router-link>
+              <router-link :to="item.link">{{ item.name }}</router-link>
             </template>
           </v-data-table>
         </v-card>

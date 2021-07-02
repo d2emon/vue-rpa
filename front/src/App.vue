@@ -10,8 +10,8 @@ import Component from 'vue-class-component';
 
 @Component
 export default class App extends Vue {
+  /*
   created() {
-    /*
     this.$http.interceptors.response.use(
       (response) => {
         return response;
@@ -28,8 +28,8 @@ export default class App extends Vue {
         }
       }
     );
-     */
   }
+  */
 }
 </script>
 
@@ -51,4 +51,3 @@ blockquote {
   padding: 0 1em;
 }
 </style>
-
