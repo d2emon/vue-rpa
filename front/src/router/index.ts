@@ -8,7 +8,7 @@ import routes from './routes';
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  base: '/',
+  base: process.env.BASE_URL,
   // mode: 'history',
   routes,
 });

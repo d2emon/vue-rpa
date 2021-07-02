@@ -24,8 +24,6 @@
     >
       <v-icon>mdi-magnify</v-icon>
     </v-btn>
-
-    <side-drawer />
   </v-app-bar>
 </template>
 
@@ -36,9 +34,6 @@ import { Prop } from 'vue-property-decorator';
 import { mapActions } from 'vuex';
 
 @Component({
-  components: {
-    SideDrawer: () => import('./SideDrawer.vue'),
-  },
   methods: {
     ...mapActions('navigation', ['switchDrawer']),
   },

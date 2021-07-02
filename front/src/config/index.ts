@@ -5,6 +5,9 @@ export interface ProjectConfig {
   lang?: string;
   theme?: {
     dark?: boolean;
+    options?: {
+      customProperties?: boolean;
+    };
     themes: { [k: string]: Theme };
   };
 }
@@ -14,6 +17,9 @@ const config: ProjectConfig = {
   lang: 'ru',
   theme: {
     dark: true,
+    options: {
+      customProperties: true,
+    },
     themes,
   },
 };

@@ -4,6 +4,8 @@
       :title="title"
     />
 
+    <side-drawer />
+
     <v-main>
       <v-container container--fluid>
         <characters-party
@@ -29,8 +31,9 @@ import { Character } from '@/services/characters';
 
 @Component({
   components: {
-    NavBar: () => import('@/components/core/NavBar.vue'),
     CharactersParty: () => import('@/components/dashboard/CharactersParty.vue'),
+    NavBar: () => import('@/components/core/NavBar.vue'),
+    SideDrawer: () => import('@/components/core/SideDrawer.vue'),
   },
   computed: {
     ...mapState(['title']),
