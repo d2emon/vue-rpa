@@ -12,7 +12,7 @@
           :characters="characters || []"
           :races="races"
           :classes="classes"
-          :background="backgrounds"
+          :backgrounds="backgrounds"
         />
 
         <v-fade-transition mode="out-in">

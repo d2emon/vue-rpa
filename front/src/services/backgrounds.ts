@@ -1,4 +1,4 @@
-import backgrounds from './races.json';
+import backgrounds from './backgrounds.json';
 
 export interface Background {
   id: string;

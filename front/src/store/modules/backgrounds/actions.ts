@@ -4,7 +4,7 @@ import { BackgroundsState } from './state';
 import { RootState } from '../../state';
 
 const actions: ActionTree<BackgroundsState, RootState> = {
-  fetchRaces: ({ commit }) => backgroundsService
+  fetchBackgrounds: ({ commit }) => backgroundsService
     .getBackgrounds()
     .then((items: Background[]) => commit('setBackgrounds', items)),
 };

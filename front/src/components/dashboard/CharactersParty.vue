@@ -8,7 +8,6 @@
       <v-flex
         md12
         sm12
-        lg4
       >
         <v-card>
           <v-data-table

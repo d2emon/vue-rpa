@@ -4,7 +4,7 @@ import { ClassesState } from './state';
 import { RootState } from '../../state';
 
 const actions: ActionTree<ClassesState, RootState> = {
-  fetchRaces: ({ commit }) => classService
+  fetchClasses: ({ commit }) => classService
     .getClasses()
     .then((items: CharacterClass[]) => commit('setClasses', items)),
 };

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "entertainer",
+    "name": "Артист"
+  },
+  {
+    "id": "urchin",
+    "name": "Беспризорник"
+  },
+  {
+    "id": "noble",
+    "name": "Благородный"
+  },
+  {
+    "id": "guild-artisan",
+    "name": "Гильдейский ремесленник"
+  },
+  {
+    "id": "sailor",
+    "name": "Моряк"
+  },
+  {
+    "id": "sage",
+    "name": "Мудрец"
+  },
+  {
+    "id": "folk-hero",
+    "name": "Народный герой"
+  },
+  {
+    "id": "hermit",
+    "name": "Отшельник"
+  },
+  {
+    "id": "criminal",
+    "name": "Преступник"
+  },
+  {
+    "id": "acolyte",
+    "name": "Прислужник"
+  },
+  {
+    "id": "soldier",
+    "name": "Солдат"
+  },
+  {
+    "id": "outlander",
+    "name": "Чужеземец"
+  },
+  {
+    "id": "charlatan",
+    "name": "Шарлатан"
+  }
+]

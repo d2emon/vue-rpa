@@ -1,4 +1,4 @@
-import classes from './races.json';
+import classes from './classes.json';
 
 export interface CharacterClass {
   id: string;

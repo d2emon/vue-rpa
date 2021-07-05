@@ -1,0 +1,50 @@
+[
+  {
+    "id": "barbarian",
+    "name": "Варвар"
+  },
+  {
+    "id": "bard",
+    "name": "Бард"
+  },
+  {
+    "id": "cleric",
+    "name": "Жрец"
+  },
+  {
+    "id": "druid",
+    "name": "Друид"
+  },
+  {
+    "id": "fighter",
+    "name": "Воин"
+  },
+  {
+    "id": "monk",
+    "name": "Монах"
+  },
+  {
+    "id": "paladin",
+    "name": "Паладин"
+  },
+  {
+    "id": "ranger",
+    "name": "Следопыт"
+  },
+  {
+    "id": "rogue",
+    "name": "Плут"
+  },
+  {
+    "id": "sorcerer",
+    "name": "Чародей"
+  },
+  {
+    "id": "warlock",
+    "name": "Колдун"
+  },
+  {
+    "id": "wizard",
+    "name": "Волшебник"
+  }
+]
