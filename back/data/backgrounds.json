@@ -1,54 +1,54 @@
 [
   {
-    "id": "entertainer",
+    "slug": "entertainer",
     "name": "Артист"
   },
   {
-    "id": "urchin",
+    "slug": "urchin",
     "name": "Беспризорник"
   },
   {
-    "id": "noble",
+    "slug": "noble",
     "name": "Благородный"
   },
   {
-    "id": "guild-artisan",
+    "slug": "guild-artisan",
     "name": "Гильдейский ремесленник"
   },
   {
-    "id": "sailor",
+    "slug": "sailor",
     "name": "Моряк"
   },
   {
-    "id": "sage",
+    "slug": "sage",
     "name": "Мудрец"
   },
   {
-    "id": "folk-hero",
+    "slug": "folk-hero",
     "name": "Народный герой"
   },
   {
-    "id": "hermit",
+    "slug": "hermit",
     "name": "Отшельник"
   },
   {
-    "id": "criminal",
+    "slug": "criminal",
     "name": "Преступник"
   },
   {
-    "id": "acolyte",
+    "slug": "acolyte",
     "name": "Прислужник"
   },
   {
-    "id": "soldier",
+    "slug": "soldier",
     "name": "Солдат"
   },
   {
-    "id": "outlander",
+    "slug": "outlander",
     "name": "Чужеземец"
   },
   {
-    "id": "charlatan",
+    "slug": "charlatan",
     "name": "Шарлатан"
   }
 ]

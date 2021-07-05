@@ -1,38 +1,38 @@
 [
   {
-    "id": "dwarf",
+    "slug": "dwarf",
     "name": "Дварф"
   },
   {
-    "id": "elf",
+    "slug": "elf",
     "name": "Эльф"
   },
   {
-    "id": "halfling",
+    "slug": "halfling",
     "name": "Полурослик"
   },
   {
-    "id": "human",
+    "slug": "human",
     "name": "Человек"
   },
   {
-    "id": "dragonborn",
+    "slug": "dragonborn",
     "name": "Драконорожденный"
   },
   {
-    "id": "gnome",
+    "slug": "gnome",
     "name": "Гном"
   },
   {
-    "id": "half-elf",
+    "slug": "half-elf",
     "name": "Полуэльф"
   },
   {
-    "id": "half-orc",
+    "slug": "half-orc",
     "name": "Полуорк"
   },
   {
-    "id": "tifling",
+    "slug": "tifling",
     "name": "Тифлинг"
   }
 ]

@@ -1,50 +1,50 @@
 [
   {
-    "id": "barbarian",
+    "slug": "barbarian",
     "name": "Варвар"
   },
   {
-    "id": "bard",
+    "slug": "bard",
     "name": "Бард"
   },
   {
-    "id": "cleric",
+    "slug": "cleric",
     "name": "Жрец"
   },
   {
-    "id": "druid",
+    "slug": "druslug",
     "name": "Друид"
   },
   {
-    "id": "fighter",
+    "slug": "fighter",
     "name": "Воин"
   },
   {
-    "id": "monk",
+    "slug": "monk",
     "name": "Монах"
   },
   {
-    "id": "paladin",
+    "slug": "paladin",
     "name": "Паладин"
   },
   {
-    "id": "ranger",
+    "slug": "ranger",
     "name": "Следопыт"
   },
   {
-    "id": "rogue",
+    "slug": "rogue",
     "name": "Плут"
   },
   {
-    "id": "sorcerer",
+    "slug": "sorcerer",
     "name": "Чародей"
   },
   {
-    "id": "warlock",
+    "slug": "warlock",
     "name": "Колдун"
   },
   {
-    "id": "wizard",
+    "slug": "wizard",
     "name": "Волшебник"
   }
 ]

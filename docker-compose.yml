@@ -1,5 +1,36 @@
 version: "2"
 services:
+  mongo:
+    image: mongo
+    ports:
+      - 28017:27017
+    restart: always
+    volumes:
+      - ./data/db:/data/db
+      - ./back/data:/import
+  mongo-express:
+    image: mongo-express
+    ports:
+      - 8081:8081
+    restart: always
+    links:
+      - mongo
+  backend:
+    build: ./back
+    command: serve
+    env_file:
+      - ./env/back/dev.env
+    links:
+      - mongo
+    ports:
+      - 5000:4000
+    # restart: always
+    volumes:
+      - ./back/package.json:/usr/src/app/package.json
+      - ./back/node_modules:/usr/src/app/node_modules
+      - ./back/dist:/usr/src/app/dist
+      - ./front/public:/usr/src/app/public
+      - ./back/src:/usr/src/app/src
   frontend:
     build: ./front
     command: serve
