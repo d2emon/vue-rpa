@@ -147,7 +147,7 @@ export default class Dashboard extends Vue {
     '3',
   ];
 
-  complete(value: number) {
+  complete(value: number): void {
     console.log(this.tabs, value);
   }
 }

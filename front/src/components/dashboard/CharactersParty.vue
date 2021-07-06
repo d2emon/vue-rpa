@@ -139,7 +139,7 @@ export default class CharactersParty extends Vue {
   @Prop()
   backgrounds!: Background[];
 
-  complete(value: number) {
+  complete(value: number): void {
     console.log(this.tabs, value);
   }
 }

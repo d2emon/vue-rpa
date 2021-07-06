@@ -44,8 +44,7 @@ export default class NavBar extends Vue {
 
   switchDrawer!: () => null;
 
-  drawerButton() {
-    console.log('Switch Drawer');
+  drawerButton(): void {
     this.switchDrawer();
   }
 }

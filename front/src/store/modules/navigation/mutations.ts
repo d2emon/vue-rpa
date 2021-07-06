@@ -3,7 +3,6 @@ import { MutationTree } from 'vuex';
 import { NavState, NavStateProperties } from './state';
 
 const toggle = (property: NavStateProperties) => (state: NavState) => {
-  console.log(`setToggle:  ${state.show}`);
   Vue.set(state, 'skip', true);
   Vue.set(state, property, !state[property]);
 };

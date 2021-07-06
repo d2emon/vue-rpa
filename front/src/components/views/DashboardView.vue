@@ -74,7 +74,7 @@ export default class DashboardView extends Vue {
 
   fetchBackgrounds!: () => Promise<null>;
 
-  mounted() {
+  mounted(): void {
     this.fetchCharacters();
     this.fetchRaces();
     this.fetchClasses();

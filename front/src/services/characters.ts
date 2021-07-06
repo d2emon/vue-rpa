@@ -1,4 +1,4 @@
-import characters from './characters.json';
+import api from '@/helpers/api';
 
 export interface Character {
   name: string;
@@ -28,5 +28,7 @@ export interface Character {
 }
 
 export default {
-  getCharacters: (): Promise<Character[]> => Promise.resolve(characters),
+  getCharacters: (): Promise<Character[]> => api.get('character')
+    .then(({ data }) => data.backgrounds)
+    .then((characters) => characters),
 };
