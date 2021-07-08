@@ -11,6 +11,9 @@ import config from './helpers/config';
 import { connect } from './helpers/mongo';
 
 // Import routes
+import backgroundRoutes from './routes/backgrounds';
+import characterRoutes from './routes/characters';
+import classRoutes from './routes/characterClasses';
 import raceRoutes from './routes/races';
 
 const app = express();
@@ -27,6 +30,9 @@ app.use(express.static(publicPath));
 app.set('dbConnection', connect(config.MONGO_URI))
 
 // Use routes
+app.use('/api/v1.0/background', backgroundRoutes);
+app.use('/api/v1.0/character', characterRoutes);
+app.use('/api/v1.0/class', classRoutes);
 app.use('/api/v1.0/race', raceRoutes);
 
 app.use(error404);
